@@ -19,7 +19,7 @@ applications to Apache Kafka.
 * [Dataset Description](http://www.debs2015.org/call-grand-challenge.html)
 
 ## Project Scope
-This projectz includes the Apache Flink application code and NiFi flow required to get the data into and out Apache Kafka.
+This project includes the Apache Flink application code and NiFi flow required to get the data into and out Apache Kafka.
 It doesn't include installation steps NiFi, Kafka, or Flink, but links to installation documentations have been provided below.  
 
 ## Project Prerequisites
