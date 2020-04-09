@@ -1,7 +1,8 @@
 # There And Back Again, a Story of Apache Kafka & Apache Flink. 
+
  ![Flank](projectImages/flinksquirrel.png)
 
-##Project Details
+#Project Details
 This project has heavily inspired by two existing efforts from Data In Motion's FLaNK Stack and Data Artisan's blog on
 stateful streaming applications.  The goal of this project is to provide insight into connecting an Apache Flink
 applications to Apache Kafka. 
@@ -17,11 +18,11 @@ applications to Apache Kafka.
 * [Taxi Ride Data Set](https://drive.google.com/file/d/0B0TBL8JNn3JgTGNJTEJaQmFMbk0)
 * [Dataset Description](http://www.debs2015.org/call-grand-challenge.html)
 
-###Project Scope
+##Project Scope
 This project includes the Apache Flink application code and NiFi flow required to get the data into and out Apache Kafka.
 It doesn't include installation steps NiFi, Kafka, or Flink, but links to installation documentations have been provided below.  
 
-###Project Prerequisites
+##Project Prerequisites
 1. Apache NiFi local server
 2. Apache Kafka with an empty topic called "rawinput" and "enriched"
 3. IntelliJ IDE installed with Scala plug-in installed
