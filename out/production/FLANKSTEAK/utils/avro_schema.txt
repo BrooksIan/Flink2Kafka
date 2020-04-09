@@ -1,0 +1,74 @@
+{ "name": "recordTaxi",
+  "namespace": "nifi.examples",
+  "type": "record" ,
+  "fields": [
+    { "name": "medallion", "type": "string" },
+    { "name": "licenseId", "type": "string" },
+    { "name": "pickUpTime", "type": "string" },
+    { "name": "dropOffTime", "type": "string" },
+    { "name": "trip_time_in_secs", "type": "int" },
+    { "name": "trip_distance", "type": "float" },
+    { "name": "pickUpLon", "type": "float" },
+    { "name": "pickUpLat", "type": "float" },
+    { "name": "dropOffLon", "type": "float" },
+    { "name": "dropOffLat", "type": "float" },
+    { "name": "payment_type", "type": "string" },
+    { "name": "fare_amount", "type": "float" },
+    { "name": "surcharge", "type": "float" },
+    { "name": "mta_tax", "type": "float" },
+    { "name": "tip_amount", "type": "float" },
+    { "name": "tolls_amount", "type": "float" },
+    { "name": "total", "type": "float" }
+    ]
+}
+
+
+
+
+{ "name": "taxiRecord",
+  "namespace": "nifi.examples",
+  "type": "record",
+  "fields": [
+    { "name": "medallion", "type": ["null", "string"] },
+    { "name": "licenseId", "type": ["null", "string"] },
+    { "name": "pickUpTime", "type": ["null", "string"] },
+    { "name": "dropOffTime", "type": ["null", "string"] },
+    { "name": "trip_time_in_secs", "type": ["null", "string"] },
+    { "name": "trip_distance", "type": ["null", "string"] },
+    { "name": "pickUpLon", "type": ["null", "string"] },
+    { "name": "pickUpLat", "type": ["null", "string"] },
+    { "name": "dropOffLon", "type": ["null", "string"] },
+    { "name": "dropOffLat", "type": ["null", "string"] },
+    { "name": "payment_type", "type": ["null", "string"] },
+    { "name": "fare_amount", "type": ["null", "string"] },
+    { "name": "surcharge", "type": ["null", "string"] },
+    { "name": "mta_tax", "type": ["null", "string"] },
+    { "name": "tip_amount", "type": ["null", "string"] },
+    { "name": "tolls_amount", "type": ["null", "string"] },
+    { "name": "total", "type": ["null", "string"] }
+    ]
+}
+
+
+.avroSchema(
+                                        "{" +   "    \"fields\": [" +
+                                                "      {\"name\": \"medallion\", \"type\": \"string\"}," +
+                                                "      {\"name\": \"licenseId\", \"type\": \"string\"}," +
+                                                "      {\"name\": \"pickUpTime\", \"type\": \"string\"}," +
+                                                "      {\"name\": \"dropOffTime\", \"type\": \"string\"}," +
+                                                "      {\"name\": \"trip_time_in_secs\", \"type\": \"int\"}," +
+                                                "      {\"name\": \"trip_distance\", \"type\": \"float\"}," +
+                                                "      {\"name\": \"pickUpLon\", \"type\": \"float\"}," +
+                                                "      {\"name\": \"pickUpLat\", \"type\": \"float\"}," +
+                                                "      {\"name\": \"dropOffLon\", \"type\": \"float\"}," +
+                                                "      {\"name\": \"dropOffLat\", \"type\": \"float\"}," +
+                                                "      {\"name\": \"payment_type\", \"type\": \"string\"}," +
+                                                "      {\"name\": \"fare_amount\", \"type\": \"float\"}," +
+                                                "      {\"name\": \"surcharge\", \"type\": \"float\"}," +
+                                                "      {\"name\": \"mta_tax\", \"type\": \"float\"}," +
+                                                "      {\"name\": \"tip_amount\", \"type\": \"float\"}," +
+                                                "      {\"name\": \"tolls_amount\", \"type\": \"float\"}," +
+                                                "      {\"name\": \"total\", \"type\": \"float\"} " +
+                                                "    ]" +
+                                                "}"
+                                )
