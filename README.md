@@ -1,13 +1,15 @@
 # There And Back Again, a Story of Apache Kafka & Apache Flink. 
 
- ![Flank](projectImages/flinksquirrel.png)
+
 
 ## Project Details
 This project has heavily inspired by two existing efforts from Data In Motion's FLaNK Stack and Data Artisan's blog on
 stateful streaming applications.  The goal of this project is to provide insight into connecting an Apache Flink
 applications to Apache Kafka. 
 
-**FLaNK Stack**
+##Church of the FLaNK Stack
+ ![Flank](projectImages/flinksquirrel.png)
+ 
 * [FLaNK](https://www.datainmotion.dev/2019/11/introducing-mm-flank-apache-flink-stack.html)
 * [FLaNK Home Site](https://www.flankstack.dev/)
 
@@ -37,6 +39,18 @@ will be written to an Apache Kafka topic called "rawInput".
  * In the NiFi UI, import the NiFi Flow template (XML file in this Git repo). For help, please review the following documentation.
  [Cloudera Documemnetation Link.](https://docs.cloudera.com/HDPDocuments/HDF3/HDF-3.4.1.1/getting-started-with-apache-nifi/content/working-with-templates.html)
  
+ * Upload NiFi Flow template using the UI icons.
+ 
+ ![UploadTemp](projectImages/NiFi_Flow/UploadTemp.png)
+ 
+ * To add NiFi Flow Template the to canvas, click on the "Add Template icon" in the NiFI UI.
+ 
+ ![AddTemp2UI](projectImages/NiFi_Flow/AddTemplateToUI.png)
+ 
+ * Select the NiFi FLow Template to add. 
+ 
+ ![SelectTempToAdd](projectImages/NiFi_Flow/SelectTempToAdd.png)
+ 
  * Once the NiFi template is loaded, the left side of the NiFi flow will look like this. 
  
  ![nifiFlow](projectImages/NiFi_Flow/firsthalfFlow.png)
@@ -45,6 +59,18 @@ will be written to an Apache Kafka topic called "rawInput".
  Please note, the CSV file is located in the data directory of this Git repo. 
  
  ![readCSVFile]( projectImages/NiFi_Flow/csvFileRead.png )
+ 
+ * Right click on the SplitRecord processor, open Properties tab, and click on the CSVReader.
+ 
+  ![CP](projectImages/NiFi_Flow/ConfigProcessor.png)
+ 
+ * Before the NiFi Flow will work, all of these services need to be enabled.
+ 
+ ![ESC0](projectImages/NiFi_Flow/EnableCS0.png)
+ 
+ ![ESC1](projectImages/NiFi_Flow/EnableCS1.png)
+ 
+ ![ESC2](projectImages/NiFi_Flow/EnableSC2.png) 
  
  * Right click on the PublishKafkaRecord processor, open Properties tab, and verify the location of your Kafka broker and topic name. 
  
@@ -55,6 +81,9 @@ will be written to an Apache Kafka topic called "rawInput".
  
  ![conKRaw](projectImages/NiFi_Flow/conKRaw.png)
  
+ * Validate the JSON record in the Flow File
+ 
+ ![FFJson](projectImages/NiFi_Flow/FlowFileJSON.png)
 
 ### Flink Application Development In IntelliJ
 For Development purposes, a running Flink cluster isn't required for application development.  This application was
