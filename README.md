@@ -7,8 +7,9 @@ This project has heavily inspired by two existing efforts from Data In Motion's 
 stateful streaming applications.  The goal of this project is to provide insight into connecting an Apache Flink
 applications to Apache Kafka. 
 
-##Church of the FLaNK Stack
- ![Flank](projectImages/flinksquirrel.png)
+## Church of the FLaNK Stack
+
+![Flank](projectImages/flinksquirrel.png)
  
 * [FLaNK](https://www.datainmotion.dev/2019/11/introducing-mm-flank-apache-flink-stack.html)
 * [FLaNK Home Site](https://www.flankstack.dev/)
