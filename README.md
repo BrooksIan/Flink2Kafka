@@ -1,6 +1,6 @@
 # There And Back Again, a Story of Apache Kafka & Apache Flink. 
 
-
+![ProjectRA](projectImages/FlankSteakRA.png)
 
 ## Project Details
 This project has heavily inspired by two existing efforts from Data In Motion's FLaNK Stack and Data Artisan's blog on
