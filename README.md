@@ -1,4 +1,5 @@
-# There And Back Again, a Story of Apache Kafka & Apache Flink. 
+# There And Back Again
+## A Story of Apache Kafka & Apache Flink. 
 
 ![ProjectRA](projectImages/FlankSteakRA.png)
 
